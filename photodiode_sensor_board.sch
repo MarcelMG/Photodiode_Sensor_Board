@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:photodiode_sensor_board-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -64,17 +65,6 @@ F 3 "" H 8700 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 8700 3150
-$Comp
-L mtpd1346d-100:MTPD1346D-100 D2
-U 1 1 5DB8193F
-P 6850 3050
-F 0 "D2" V 6753 3209 50  0000 L CNN
-F 1 "MTPD1346D-100" V 6846 3209 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-46-3_Window" H 6850 3225 50  0001 C CNN
-F 3 "" H 6800 3050 50  0001 C CNN
-	1    6850 3050
-	0    -1   1    0   
-$EndComp
 Wire Wire Line
 	6850 2850 7050 2850
 Wire Wire Line
@@ -98,17 +88,6 @@ F 2 "" H 7100 3150 50  0001 C CNN
 F 3 "" H 7100 3150 50  0001 C CNN
 	1    7100 3150
 	1    0    0    -1  
-$EndComp
-$Comp
-L g12183-003k:G12183-003K D1
-U 1 1 5DB81EDE
-P 4950 3050
-F 0 "D1" V 4853 3209 50  0000 L CNN
-F 1 "G12183-003K" V 4946 3209 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-18-3_Window" H 4950 3225 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2822644.pdf" H 4900 3050 50  0001 C CNN
-	1    4950 3050
-	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	4950 2850 5150 2850
@@ -135,14 +114,37 @@ F 3 "" H 5200 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L bpw21r:BPW21R D3
-U 1 1 5DB832B5
+L sto46p_to-18_socket:STO46P_TO-18_SOCKET D1
+U 1 1 5DCBFC4C
+P 4950 3050
+F 0 "D1" V 4853 3209 50  0000 L CNN
+F 1 "STO46P_TO-18_SOCKET" V 4946 3209 50  0000 L CNN
+F 2 "my_components:STO46P_TO-18_SOCKET" H 4950 3225 50  0001 C CNN
+F 3 "https://marktechopto.com/pdf/products/datasheet/MTPD1346D-100.pdf" H 4900 3050 50  0001 C CNN
+	1    4950 3050
+	0    -1   1    0   
+$EndComp
+$Comp
+L sto46p_to-18_socket:STO46P_TO-18_SOCKET D2
+U 1 1 5DCBFE74
+P 6850 3050
+F 0 "D2" V 6753 3209 50  0000 L CNN
+F 1 "STO46P_TO-18_SOCKET" V 6846 3209 50  0000 L CNN
+F 2 "my_components:STO46P_TO-18_SOCKET" H 6850 3225 50  0001 C CNN
+F 3 "https://marktechopto.com/pdf/products/datasheet/MTPD1346D-100.pdf" H 6800 3050 50  0001 C CNN
+	1    6850 3050
+	0    -1   1    0   
+$EndComp
+$Comp
+L sto5p_to-5_socket:STO5P_TO-5_SOCKET D3
+U 1 1 5DCC0001
 P 8150 3050
 F 0 "D3" V 8053 3209 50  0000 L CNN
-F 1 "BPW21R" V 8146 3209 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-5-2_Window" H 8150 3225 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/81519/bpw21r.pdf" H 8100 3050 50  0001 C CNN
+F 1 "STO5P_TO-5_SOCKET" V 8146 3209 50  0000 L CNN
+F 2 "my_components:STO5P_TO-5_SOCKET" H 8150 3225 50  0001 C CNN
+F 3 "https://marktechopto.com/pdf/products/datasheet/MTPD1346D-100.pdf" H 8100 3050 50  0001 C CNN
 	1    8150 3050
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
+NoConn ~ 8300 3000
 $EndSCHEMATC
